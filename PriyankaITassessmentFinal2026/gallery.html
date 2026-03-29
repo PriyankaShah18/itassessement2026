@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Priyanka | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">My Gallery</h1>
+        <p class="text-center">Click image to enlarge</p>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/coffee.jpg" alt="Coffee"><p>Coffee</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/Everest.jpg" alt="Everest"><p>Everest</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/flower.jpg" alt="Flower"><p>Flower</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/cat.jpg" alt="Cat"><p>Cat</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/dog.jpg" alt="Dog"><p>Dog</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/2.jpg" alt="Nature"><p>Nature</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/3.jpg" alt="Scenery"><p>Scenery</p></div>
+            <div class="gallery-item" onclick="openLightbox(this)"><img src="Images/4.jpg" alt="Travel"><p>Travel</p></div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Large view">
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div><h3>Priyanka Shah</h3><p>Kathmandu, Nepal<br><a href="mailto:priyanka@gmail.com">priyanka@gmail.com</a></p></div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://www.pexels.com" target="_blank">Photos →</a>
+            </div>
+        </div>
+        <div class="copyright">© 2026 Priyanka Shah</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
